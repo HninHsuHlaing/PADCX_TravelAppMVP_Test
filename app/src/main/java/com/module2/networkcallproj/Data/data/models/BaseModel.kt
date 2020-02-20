@@ -17,10 +17,10 @@ import java.util.concurrent.TimeUnit
 abstract class BaseModel {
     //val mDataAgent : TourNewsDataAgent = RetrofitDataAgent
     protected  var mToursApi : NewsApi
-   // protected lateinit var mTourDB : ToursDb
+
 
     protected  var mCountryApi : CountryApi
-   // protected lateinit var mCountryDB : CountryDb
+
 
     init {
         val mOkHttpClient = OkHttpClient.Builder()

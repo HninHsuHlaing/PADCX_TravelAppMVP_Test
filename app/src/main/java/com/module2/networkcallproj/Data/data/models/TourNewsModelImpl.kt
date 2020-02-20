@@ -2,6 +2,7 @@ package com.module2.networkcallproj.Data.data.models
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.util.Log
 import androidx.lifecycle.LiveData
 import com.module2.networkcallproj.Data.data.VO.CountryVO
 import com.module2.networkcallproj.Data.data.VO.TourVO
@@ -37,6 +38,7 @@ class  TourNewsModelImpl(var context: Context) :TourNewsModel, BaseModel() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe ({
+                Log.d("TourList",it.toString())
                 mTourDB.tourDao().insertAllNews(it)
             },{
                 onError(it.localizedMessage ?: No_INTERNET_CONNECTION)

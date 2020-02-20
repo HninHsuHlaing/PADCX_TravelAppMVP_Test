@@ -14,7 +14,7 @@ import kotlin.reflect.KClass
 //import kotlin.reflect.KClass
 
 
-@Database(entities = [TourVO::class], version = 2)
+@Database(entities = [TourVO::class], version = 3)
 abstract class ToursDb : RoomDatabase(){
     companion object{
 

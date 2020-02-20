@@ -8,8 +8,8 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface NewsApi {
-    @FormUrlEncoded
-    @POST(GetAllNews)
-    fun loadAllTour(@Field(PARAM_ACCESS_TOKEN) accessToken : String)
+
+    @GET(GetAllNews)
+    fun loadAllTour(@Query(PARAM_ACCESS_TOKEN) accessToken : String)
             : Observable<GetAllTourResponse>
 }
