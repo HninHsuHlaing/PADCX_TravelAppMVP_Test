@@ -20,16 +20,17 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
 
-    private  val mTourNewsModel : TourNewsModel = TourNewsModelImpl
-    private lateinit var mTourDb : ToursDb
-    private  lateinit var mCountryDb : CountryDb
+    private lateinit var  mTourNewsModel : TourNewsModel
+   // private lateinit var mTourDb : ToursDb
+    //private  lateinit var mCountryDb : CountryDb
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mTourDb = ToursDb.getInstance(this)
-        mCountryDb = CountryDb.getInstance(this)
+        mTourNewsModel = TourNewsModelImpl(this)
+       // mTourDb = ToursDb.getInstance(this)
+        //mCountryDb = CountryDb.getInstance(this)
 
 
         val mCountryList = CountryListAdapter()

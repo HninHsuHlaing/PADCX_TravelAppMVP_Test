@@ -17,10 +17,10 @@ import java.util.concurrent.TimeUnit
 abstract class BaseModel {
     //val mDataAgent : TourNewsDataAgent = RetrofitDataAgent
     protected  var mToursApi : NewsApi
-    protected lateinit var mTourDB : ToursDb
+   // protected lateinit var mTourDB : ToursDb
 
     protected  var mCountryApi : CountryApi
-    protected lateinit var mCountryDB : CountryDb
+   // protected lateinit var mCountryDB : CountryDb
 
     init {
         val mOkHttpClient = OkHttpClient.Builder()
@@ -38,6 +38,7 @@ abstract class BaseModel {
         mToursApi = retrofit.create(NewsApi::class.java)
         mCountryApi = retrofit.create(CountryApi::class.java)
     }
+
 
 //    fun initDatabase(context: Context){
 //        mTourDB = ToursDb.getInstance(context)
