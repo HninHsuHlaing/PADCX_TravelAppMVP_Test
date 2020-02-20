@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/ivcountry"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image1"
+            android:scaleType="centerCrop"
+            >
+        </ImageView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            >
+
+        </Button>
+        <TextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thiland"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvTourCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18 Hours"
+            android:textSize="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+        </TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:layout_gravity="right|bottom"
+            android:layout_marginEnd="20dp"
+            >
+
+        </Button>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
